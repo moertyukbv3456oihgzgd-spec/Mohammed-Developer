@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+body {
+    background: #1a1a1a;  /* خلفية غامقة */
+    color: #f2f2f2;
+}
+
+/* القائمة */
+.navbar {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    background: linear-gradient(90deg, #ff009d, #b300ff);
+    box-shadow: 0 4px 15px rgba(255, 0, 200, 0.4);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color: #ccff00; /* ليموني */
+}
+
+/* الهيرو */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: radial-gradient(circle, #ff00b3, #7a00ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 25px #ff00e6;
+}
+
+.letter {
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 0 0 18px #ffffff;
+}
+
+.hello {
+    margin-top: 18px;
+    font-size: 34px;
+    color: #ff00b3;
+    font-weight: bold;
+}
+
+.type {
+    font-size: 30px;
+    margin-top: 8px;
+    color: #ccff00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ccff00;
+}
+
+.desc {
+    margin-top: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 19px;
+    color: #eaeaea;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: linear-gradient(90deg, #ff009d, #b300ff);
+    color: #fff;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 0 15px #ff00e6;
+    transition: .3s;
+}
+.btn:hover {
+    transform: scale(1.08);
+}
+
+/* من أنا */
+.about, .skills, .services, .contact {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #ff00b3;
+    font-weight: bold;
+    text-shadow: 0 0 12px #ff009d;
+}
+
+.line {
+    width: 110px;
+    height: 4px;
+    background: linear-gradient(90deg,#ff00b3,#b300ff);
+    margin: 12px auto 25px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* المهارات */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skill {
+    background: #2a2a2a;
+    width: 260px;
+    padding: 22px;
+    text-align: center;
+    border-radius: 14px;
+    border: 3px solid #ff00d4;
+    box-shadow: 0 0 15px #ff00d466;
+}
+
+.skill h3 {
+    color: #ccff00;
+    font-size: 24px;
+}
+
+/* الخدمات */
+.services-box {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    background: #3b003b;
+    padding: 25px;
+    border-radius: 14px;
+    width: 280px;
+    text-align: center;
+    border: 3px solid #ff00d4;
+    box-shadow: 0 0 18px #ff00e666;
+}
+
+.service h3 {
+    color: #ff00e6;
+}
+
+/* اتصل بي */
+.contact-form {
+    width: 90%;
+    max-width: 520px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #ff00e6;
+    font-size: 17px;
+    background: #111;
+    color: #fff;
+    box-shadow: 0 0 12px #ff00e644 inset;
+}
+
+.whatsapp {
+    background: #00ff55;
+    color: black;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff5588;
+}
+
+.note {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 17px;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    background: linear-gradient(90deg,#7a00ff,#ff00b3);
+    color: white;
+    box-shadow: 0 -4px 18px #ff00e6aa;
+}
+
+.social a {
+    margin: 0 15px;
+    color: #ccff00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ccff00;
+}
+
+
+.services .subtitle {
+    text-align: center; /* تحط النص في منتصف الصفحة أفقياً */
+    font-size: 20px;
+    color: var(--secondary);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
